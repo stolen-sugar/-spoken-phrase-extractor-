@@ -7,9 +7,9 @@ iterate_over_all_files()
    filename=$(basename "$FILE")
    mv $FILE .
    sleep 2
-   mv talon_commands.json talon_commands$counter.json
+   mv talon_commands.json talon_commands$counter-$filename.json
    sleep 1;
-   mv talon_commands$counter.json ../commands
+   mv talon_commands$counter-$filename.json ../commands
    mv $filename ../users/
    sleep 9;
    counter=$((counter+1))
