@@ -1,18 +1,19 @@
 counter=0
-sleep 1
 iterate_over_all_files()
 {
-   for FILE in ../users/*;
+   for FILE in ~/.talon/users/*;
    do
    filename=$(basename "$FILE")
-   mv $FILE .
-   sleep 2
+
+   mv $FILE ~/.talon/user/
+   sleep 5
+   osascript ./spoken-commands-get.scpt
+   sleep 5
    mv talon_commands.json talon_commands$counter-$filename.json
-   sleep 1;
-   mv talon_commands$counter-$filename.json ../commands
-   mv $filename ../users/
-   sleep 9;
+   mv talon_commands$counter-$filename.json ~/.talon/commands
+   mv $filename ~/.talon/users/
    counter=$((counter+1))
+   sleep 5
    done
 }
  

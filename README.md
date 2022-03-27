@@ -10,10 +10,12 @@ To use it, follow these steps:
 2. Create folder `~/.talon/commands`
 3. Create folder `~/.talon/users`
 4. Place all user profiles in `~/.talon/users`
-5. Update the number in this line("`repeat 5 times`") from the `get-all-commands.scpt`  with the number of user profiles.
-6. Copy `extract.py` into `~/.talon/user`
-7. Copy `file-movement-manager.sh` into `~/.talon/user`
-8. run in terminal: `cd ~/.talon/user`
-9. run in terminal: `./spoken.sh`
-10. immediately run `get-all-commands.scpt` from Script Editor GUI
-11. Files called talon_commands[number].json will be created in `~/.talon/commands`
+5. Copy files into `~/.talon/user`
+   1. `extract.py`
+   2. `file-movement-manager.sh`
+   3. `spoken-commands-get.scpt`
+6. open terminal with 2 windows
+7. run commands in terminal - window 1:
+   1. `cd ~/.talon/user`
+   2. `./spoken.sh`
+8. Files called talon_commands[number]-[name].json will be created in `~/.talon/commands`
