@@ -1,4 +1,3 @@
-# run this script from ~/.talon/user
 counter=0
 sleep 1
 iterate_over_all_files()
@@ -18,9 +17,3 @@ iterate_over_all_files()
 }
  
 iterate_over_all_files
- 
- 
- 
- 
- 
-# restart_talon
